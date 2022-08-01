@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 500;
+    
+ 
+}
+
+
+:root{
+    /* colors */
+    --primary-color:rgb(69, 154, 125);
+    --font-color:#fff;
+
+}
+body{
+    background: var(--primary-color);
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+   background: var(--primary-color);
+    height: 100vh;
+    width: 15%;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 500;
+
+  
+}
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    margin: 15% 15% 0% 15px;
+}
+nav .utensils{
+    font-size: 50px;
+    padding-right: 20px;
+}
+
+.menu{
+   
+    
+    display: flex;
+    text-align: center;
+    justify-content: start;
+
+    
+}
+.menu ul{
+  position: relative;
+  top: -30px;
+width: 100%;
+}
+
+.menu ul li{
+   height: 50px;
+   margin-top: 10px;
+    
+     
+    list-style: none;
+}
+nav ul li a{
+    margin-left: 10%;   
+   height: 100%;
+   display: flex;
+   align-items: center;
+   
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.7);
+   
+   
+}
+nav ul li a i{
+    
+    min-width: 60px;
+    font-size: 20px;
+}
+
+nav ul li:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid var(--font-color);
+}
+
+
+.sidebar .menu-bar{
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+
+}
+
+.bottom-content{
+   
+    padding: 1px;
+    position: relative;
+    bottom: -20px;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+}
+.bottom-content li{
+    height: 50px;
+   
+     list-style: none;
+}
+.bottom-content li a{
+    height: 100%;
+    width: 100%;
+    margin-left: 20%;
+ 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.bottom-content li a i{
+    min-width: 60px;
+    font-size: 20px;
+}
+.bottom-content:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid var(--font-color);
+    color: var(--font-color);
+    
+}
+
+/* sidebar  */
+.container{
+     background: rgb(243, 246, 248, 1); 
+
+    height: 101vh;
+    border: 1px solid white;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    position: absolute;
+    top: -1%;
+    left: 15%;
+    width: 84vw;
+    z-index: -1;
+}
+.top{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+
+}
+
+.input-box{
+    position: relative;
+    height: 55px;
+  
+    width: 84%;
+    margin-right: 30px;
+    border-radius: 15px;
+    background-color: var(--font-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+}
+
+.input-box input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px 0 60px ;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
+}
+.input-box .search{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    border-radius: 15px;
+    background-color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search .search-icon{
+     font-size: 30px;
+     color: grey;
+
+}
+.input-box .mic-icon{
+    position: absolute;
+  right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: grey;
+    padding: 5px;
+}
+.profile{
+   position: relative;
+   width:13%;
+   background: var(--font-color);
+   border-radius: 15px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+}
+.profile .pic{
+    position: relative;
+
+}
+
+.profile .notif-icon{
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    font-size: 20px;
+}
+
+.profile .pic .prof{
+    font-size: 30px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+
+}
+.profile .pic .name{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+/* end top */
+.mid{
+    position: relative;
+    top: 15%;
+    left: 2%;
+    width: 96%;
+    
+}
+.mid .boxss{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mid .boxss select{
+    border-radius: 10px;
+    padding: 1px;
+    width:80%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+}
+/* top */
+
+.wrapper{
+
+position: relative;
+padding: 0% 25px 0 25px;
+top: 17%; 
+ display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-auto-rows: minmax(100px, auto);
+grid-gap:1em;
+
+height: 79.9%;
+}
+.wrapper > div{
+    background: var(--font-color);
+    padding: 1em;
+    border-radius: 20px;
+}
+
+
+.box1{
+grid-column: 1;
+grid-row: 1 / span 2 ;
+height: 70%;
+background: var(--primary-color) !important;
+display: flex;
+flex-direction: column;
+padding: 10%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+}
+.box1 .one{
+    padding: 5%;
+    
+}
+.box1 .first{
+    color: rgb(243, 246, 248, 1);
+    padding-bottom: 10%;
+
+}
+.box1 .first .check{
+    font-size:150%;
+    padding-right: 10px;
+}
+.box1 .second{
+    color:  var(--font-color);;
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+}
+.box1 .second small{ 
+    color: rgb(243, 246, 248, 1);
+    padding-left: 7px;
+}
+.box1 .last{
+    color: rgb(243, 246, 248, 1);
+}
+.box2{
+    grid-column: 2;
+    grid-row: 1 / span 2 ;
+    height: 70%;
+    display: flex;
+flex-direction: column;
+padding: 10%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+
+
+}
+.box2 .two{
+    padding: 5%;
+    
+}
+.box2 .two .second small{
+    color: orange;
+}
+.box2 .first{
+    color: #000;
+    padding-bottom: 10%;
+
+}
+.box2 .first .trend{
+    font-size:150%;
+    padding-right: 10px;
+}
+.box2 .second{
+    color: #000;
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+}
+.box2 .second small{ 
+    color: #000;
+    padding-left: 7px;
+}
+
+.box3{
+    grid-column: 3;
+    grid-row: 1 / span 2 ;
+    height: 70%;
+    display: flex;
+flex-direction: column;
+padding: 10%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+
+
+}
+.box3 .three{
+    padding: 5%;
+    
+}
+.box3 .first{
+    color: #000;
+    padding-bottom: 10%;
+
+}
+.box3 .three .second small{
+    color: green;
+}
+.box3 .first .trend{
+    font-size:150%;
+    padding-right: 10px;
+}
+.box3 .second{
+    color: #000;
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+}
+.box3 .second small{ 
+    color: #000;
+    padding-left: 7px;
+}
+
+.box4{
+    grid-column: 4;
+    grid-row: 1 / span 2 ;
+    height: 70%;
+    display: flex;
+flex-direction: column;
+padding: 10%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+
+
+}
+.box4 .four{
+    padding: 5%;
+    
+}
+.box4 .four .second small{
+    color: green;
+}
+.box4 .first{
+    color: #000;
+    padding-bottom: 10%;
+
+}
+.box4 .first .trend{
+    font-size:150%;
+    padding-right: 10px;
+}
+.box4 .second{
+    color: #000;
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+}
+.box4 .second small{ 
+    color: #000;
+    padding-left: 7px;
+}
+.box5{
+    grid-column: 1 /span 3;
+    position: relative;
+    top: -16%;
+    grid-row: 3/ span 3; 
+    height: 107%;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+}
+.box5 span{
+
+   font-weight: 900;
+   font-size: 105%;
+   
+}
+.box5 .boxs{
+    position: absolute;
+    top: 4%;
+    right: 1.6%;
+    
+    
+}
+.box5 .boxs select{
+    border-radius: 10px;
+    padding: 2px;
+}
+.sal{
+    margin-bottom: 2%;
+}
+.box6{
+    grid-column: 4;
+    grid-row: 3 / span 2; 
+    position: relative;
+    top: -23%;
+    height: 100%;
+}
+.box6 span{
+    font-weight: 900;
+}
+
+
+.MPItems{
+    position: relative;
+    padding-top: 15px;
+    height:100%;
+}
+.MPItems ul{
+ 
+    height: 95%;      
+    margin: 2px 0 2px 0;
+}
+
+.MPItems ul li{
+   
+  padding: 15px;
+   border-radius: 10px;
+  list-style: none;
+    border: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+}
+.MPItems ul li i{
+   
+    padding-right: 10px;
+  }
+.MPItems ul li:hover{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) 
+}
+
+
+.box7{
+    grid-column: 4;
+    position: relative;
+    top: -45%;
+    height: 110%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+ 
+}
+.box7 span{
+    font-weight: 900;
+}
+.box7 .del{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.box7 .del div{
+    padding: 10px;
+    margin: 10px 5px 5px 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+

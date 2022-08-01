@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://kit.fontawesome.com/d66f81f6a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+    <div class="menu-bar">
+        <div class="logo">
+            <i class="fa-solid fa-utensils utensils"></i>
+            <h2>foodaily</h2>
+        </div>
+        <div class="menu ">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-pie"></i>
+                         <span> Dashboard</span>
+                    </a>
+                </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Orders</span> 
+                </a> 
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-tag"></i>
+                    <span>Promotions</span> 
+                </a> 
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-cube"></i>
+                    <span>Inventory</span> 
+                </a> 
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Business Hours</span> 
+                </a> 
+            </li>
+            <li> 
+                <a href="">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Support</span> 
+                </a> 
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span> 
+                </a> 
+            </li>
+
+            
+
+        </ul>
+        </div>
+   
+    <div class="bottom-content">
+        <li>
+            <a href="">
+                <i class="fa-solid fa-door-open"></i>
+                <span>Log out</span> 
+             </a> 
+        </li>
+
+    </div>
+    </div>
+</nav>
+<section>
+    <div class="container">
+        <div class="top">
+            <div class="input-box">
+                <input type="text" placeholder="Search...">
+                <span class="search">
+                   <a href=""> <i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+                </span>
+                <i class="fa-solid fa-microphone mic-icon"></i>
+            </div>
+            <div class="profile">
+                <div class="pic">
+                   <span><i class="fa-solid fa-user-large prof"></i></span>
+                   <div class="name">
+                   <h6>Restaurant</h6>
+                   <h4>Tonduro</h4>
+                    </div>
+                </div>
+               
+                <i class="fa-solid fa-bell notif-icon"></i>
+            </div>
+        </div>
+        <div class="mid"> 
+            <h1>overview</h1>
+            <div class="boxss">
+                <select>
+                  <option>Today</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+        </div>
+        <div class="wrapper">
+            <div class="box box1">
+                <div class="one">
+                    <div class="first">
+                        <i class="fa-solid fa-file-circle-check check"></i>
+                        <span>Orders</span>
+                    </div>
+                <div class="second">
+                    <span>$35,485<small>+2.8</small> </span>
+               </div>
+               <div class="last">
+                <small>Compared to ($25,450 last year)</small>
+               </div>
+                </div>   
+            </div>
+            <div class="box box2">
+                <div class="two">
+                    <div class="first">
+                        <i class="fa-solid fa-arrow-trend-up trend"></i>
+                        <span>Avg. Order Amount</span>
+                   </div>
+                   <div class="second">
+                    <span>8,562<small>+2.8</small> </span>
+                   </div>
+                   <div class="last">
+                    <small>Compared to ($56,232 last year)</small>
+                    </div>
+                </div>                    
+            </div>
+            <div class="box box3">
+                <div class="three">
+                      <div class="first">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Unique Customers</span>
+                   </div>
+                   <div class="second">
+                    <span>$15,235<small>+2.8</small> </span>
+                   </div>
+                   <div class="last">
+                    <small>Compared to ($25,450 last year</small>
+                    </div>
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="four">
+                    <div class="first">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Net Sales</span>
+                   </div>
+                   <div class="second">
+                    <span>$9,584<small>+3.8</small> </span>
+                   </div>
+                   <div class="last">
+                    <small>Compared to ($25,450 last year</small>
+                    </div>
+                </div>
+            </div>
+            <div class="box box5">
+               <div class="sal">
+                <span>Sales Analytics</span>
+                <div class="boxs">
+                    <select>
+                      <option>This Week</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                    </select>
+                  </div>
+                </div>   
+                <div id="my_dataviz"></div>
+            </div>
+            <div class="box box6">
+                <span>Most Popular Items</span>
+                <div class="MPItems">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-bowl-food"></i>
+                            
+                                <span>Special Chicken</span>                    
+                        </li>
+                        <br>
+                       <li>
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <span>Chew mein</span>
+                       </li>
+                       <br>
+                       <li>
+                        <i class="fa-solid fa-bowl-food"></i>
+                                <span>BBQ Park</span>
+                       </li>
+                       <br>
+                     
+                    </ul>
+                </div>
+            </div>
+            <div class="box box7">
+                <span>Delivery Boy</span>
+                
+            <div class="del">
+                <div><i class="fa-solid fa-user-large "></i></div>
+                <div><i class="fa-solid fa-user-large "></i></div>
+                <div><i class="fa-solid fa-user-large "></i></div>
+                <div><i class="fa-solid fa-user-large "></i></div>
+                <div><i class="fa-solid fa-user-large "></i></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<script src="index.js">
+
+    
+    </script>
+</body>
+</html>
